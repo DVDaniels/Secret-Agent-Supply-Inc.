@@ -83,7 +83,12 @@ nav ul {
 
 /* Products and Business */
 
-.products
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+
 .business-info {
   display: flex;
   justify-content: space-between;
@@ -113,4 +118,13 @@ nav ul {
   color: white;
   text-align: center;
   padding: .5rem;
+}
+
+.title {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+  width: 35%;
 }
