@@ -120,11 +120,13 @@ nav ul {
   padding: .5rem;
 }
 
-.title {
+.info {
+  width: 35%
+}
+
+.info .title {
   display: block;
   background-color: black;
   color: white;
-  text-align: center;
-  padding: .5rem;
-  width: 35%;
+  padding: 1rem 2rem;
 }
