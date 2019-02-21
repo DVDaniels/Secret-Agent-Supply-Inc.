@@ -66,6 +66,16 @@ h4 {
   margin: 0 .25rem 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .headline h1 {
+    font-size: 1.5rem;
+  }
+
+  .headline h2 {
+    font-size: 1.2rem;
+  }
+}
+
 /* Nav */
 
 nav {
@@ -79,6 +89,21 @@ nav ul {
   justify-content: space-between;
   padding: 0.75rem 0;
   list-style: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
 }
 
 /* Products and Business */
@@ -129,4 +154,29 @@ nav ul {
   background-color: black;
   color: white;
   padding: 1rem 2rem;
+}
+
+@media only screen and (max-width 1024px) {
+  .product {
+    width: 47%;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+
+  .info {
+    width: 35%;
+  }
+}
+
+/*footer*/
+
+footer {
+  background-color: black;
+  color: white;
+  height: 5rem;
+  margin-top: 4rem;
+  text-align: left;
+  padding: 3rem;
 }
