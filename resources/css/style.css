@@ -187,7 +187,7 @@ nav ul {
   padding: 1rem 2rem;
 }
 
-@media only screen and (max-width 1024px) {
+@media only screen and (max-width: 1024px) {
   .product {
     width: 47%;
   }
@@ -201,13 +201,13 @@ nav ul {
   }
 }
 
-@media only screen and (max-width 470px) {
+@media only screen and (max-width: 470px) {
 .products,
   .business-info {
     flex-wrap: wrap;
   }
 
-.product {
+.products {
   width: 90%
   margin: auto;
 }
@@ -233,7 +233,7 @@ footer {
   padding: 3rem;
 }
 
-@media only screen and (max-width 470px) {
+@media only screen and (max-width: 470px) {
   footer {
     text-align: center;
   }
