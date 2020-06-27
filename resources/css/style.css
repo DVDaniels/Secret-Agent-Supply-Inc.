@@ -8,18 +8,27 @@ html {
   background color: white;
 }
 
-body {
-  font-family: helvetica, sans-serif;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-h1,
-h4 {
+h1, h4 {
   font-weight: bold;
+}
+
+/* Nav */
+
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.75rem 0;
+  list-style: none;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 /*Header*/
@@ -69,6 +78,21 @@ h4 {
 .headline h4 {
   font-family: helvetica;
   font-weight: bold;
+  color: salmon;
+}
+
+/* Body */
+body {
+  font-family: helvetica, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -103,27 +127,6 @@ h4 {
   font-family: helvetica;
   font-weight: bold;
 }
-
-}
-
-
-/* Nav */
-
-nav {
-  background-color: firebrick;
-  color: white;
-}
-
-nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75rem 0;
-  list-style: none;
-}
-
-.mobile-nav {
-  display: none;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -141,17 +144,20 @@ nav ul {
 
 .products {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   margin: 3rem 0 0 0;
 }
 
 .business-info {
   display: flex;
-  justify-content: space-between;
+  flex: 200px;
+  justify-content: space-around;
   margin: 3rem 0 0 0;
 }
 
 .product {
+  flex-direction: row;
   width: 30%;
 }
 
@@ -188,37 +194,35 @@ nav ul {
 }
 
 @media only screen and (max-width: 1024px) {
-  .product {
-    width: 47%;
-  }
-
-  .product-glasses {
-    display: none;
-  }
 
   .info {
     width: 35%;
   }
 }
 
-@media only screen and (max-width: 470px) {
-.products,
-  .business-info {
-    flex-wrap: wrap;
-  }
-
+@media only screen and (max-width: 700px) {
+/* "products" is the container for "product"*/
 .products {
   width: 90%
   margin: auto;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.product.watch {
-  display: none;
+.product {
+  width: 70%;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
 
 .info {
   width: 90%;
   margin: 0.5rem auto;
+}
+
+.title {
+  margin: 10px;
 }
 }
 
