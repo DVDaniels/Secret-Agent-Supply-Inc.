@@ -5,14 +5,14 @@
 
 html {
   font-size: 18px;
-  background color: white;
+  background-color: white;
 }
 
 h1, h4 {
   font-weight: bold;
 }
 
-/* Nav */
+/* Navigation bar*/
 
 nav {
   background-color: firebrick;
@@ -93,51 +93,11 @@ body {
 
 .title {
   margin-bottom: 10px;
+  text-align: center;
 }
 
-@media only screen and (max-width: 1024px) {
-  .headline h1 {
-    font-size: 1.5rem;
-  }
-
-  .headline h4 {
-    font-size: 1.2rem;
-  }
-}
-
-@media only screen and (max-width 1024px) {
-.main-banner {
-  height: 15rem;
-}
-
-.headline {
-  width: 100%;
-  padding: 1rem 2rem;
-  top: 10rem;
-}
-
-.headline h1 {
-  font-size: 1rem;
-  font-family: helvetica;
-  font-weight: bold;
-}
-
-.headline h4 {
-  font-size: .77rem;
-  font-family: helvetica;
-  font-weight: bold;
-}
-}
-
-@media only screen and (max-width: 1024px) {
-  nav ul {
-    display: none;
-  }
-
-  .mobile-nav {
-    display: block;
-    text-align: center;
-  }
+.info {
+  text-align: center;
 }
 
 /* Products and Business */
@@ -193,6 +153,42 @@ body {
   padding: 1rem 2rem;
 }
 
+/*footer*/
+
+footer {
+  background-color: black;
+  color: white;
+  height: 5rem;
+  margin-top: 4rem;
+  text-align: left;
+  padding: 3rem;
+}
+
+/*Responsive Code*/
+
+@media only screen and (max-width: 1024px) {
+  .headline h1 {
+    font-size: 1.5rem;
+  }
+
+  .headline h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
 @media only screen and (max-width: 1024px) {
 
   .info {
@@ -224,17 +220,6 @@ body {
 .title {
   margin: 10px;
 }
-}
-
-/*footer*/
-
-footer {
-  background-color: black;
-  color: white;
-  height: 5rem;
-  margin-top: 4rem;
-  text-align: left;
-  padding: 3rem;
 }
 
 @media only screen and (max-width: 470px) {
